@@ -1,0 +1,3 @@
+import datetime
+dk=datetime.datetime.now()
+print(dk.strftime("Current date and time: %Y-%m-%d %H:%M:%S"))
