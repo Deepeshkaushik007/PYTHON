@@ -1,7 +1,5 @@
 a=int(input("Enter first number: "))
 b=int(input("Enter second number: "))
 print("Before swaping a=",a, "b=",b)
-temp=a
-a=b
-b=temp
+a,b=b,a
 print("After swaping a=",a,"b=",b)
