@@ -1,0 +1,10 @@
+def i(str):
+    rev = str[::-1]
+    return str == rev
+
+# Example 
+input = "madam"
+if i(input):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
