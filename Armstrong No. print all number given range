@@ -1,0 +1,21 @@
+##Write a program to print all Armstrong numbers in a given range.
+def is_armstrong(num):
+    num_str = str(num)
+    num_digits = len(num_str)
+    
+
+    armstrong_sum = sum(int(digit) ** num_digits for digit in num_str)
+    
+    return armstrong_sum == num
+
+def print_armstrong_numbers(start, end):
+    print("Armstrong numbers in the range", start, "to", end, "are:")
+    for num in range(start, end + 1):
+        if is_armstrong(num):
+            print(num)
+
+# Example usage:
+start_range = int(input("Enter the start of the range: "))
+end_range = int(input("Enter the end of the range: "))
+
+print_armstrong_numbers(start_range, end_range)
