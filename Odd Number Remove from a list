@@ -1,0 +1,9 @@
+##write a python program to remove all odd numbers from a list
+def remove_odd(x):
+    for i in x[:]:
+        if (i % 2) != 0:
+            x.remove(i)
+    return x 
+
+x = [12, 15, 2,7, 9]
+print(remove_odd(x))
