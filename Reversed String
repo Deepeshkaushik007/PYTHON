@@ -1,0 +1,7 @@
+def rev(str):
+    rev = str[::-1]
+    return rev
+
+# Example 
+input = "This is a Reversed String!"
+print("Reversed string:", rev(input))
