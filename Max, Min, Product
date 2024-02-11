@@ -1,0 +1,25 @@
+##Write a program which takes list of numbers as input and finds, the largest number in the list, the smallest number in the list and Product of all the items in the list.
+def analyze_numbers(numbers):
+    if not numbers:
+        return None, None, None
+
+    largest = max(numbers)
+    smallest = min(numbers)
+    product = 1
+    for num in numbers:
+        product *= num
+
+    return largest, smallest, product
+
+# Example usage:
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+largest, smallest, product = analyze_numbers(numbers)
+
+if largest is not None:
+    print("Largest number:", largest)
+    print("Smallest number:", smallest)
+    print("Product of all numbers:", product)
+else:
+    print("No numbers provided.")
