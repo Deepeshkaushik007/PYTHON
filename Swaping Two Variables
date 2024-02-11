@@ -3,3 +3,25 @@ b=int(input("Enter second number: "))
 print("Before swaping a=",a, "b=",b)
 a,b=b,a
 print("After swaping a=",a,"b=",b)
+
+or
+
+def exchange_values(a, b):
+    print("Before exchanging:")
+    print("a =", a)
+    print("b =", b)
+    
+    # Exchange values using a temporary variable
+    temp = a
+    a = b
+    b = temp
+    
+    print("\nAfter exchanging:")
+    print("a =", a)
+    print("b =", b)
+
+# Example usage:
+value1 = int(input("Enter the first value: "))
+value2 = int(input("Enter the second value: "))
+
+exchange_values(value1, value2)
