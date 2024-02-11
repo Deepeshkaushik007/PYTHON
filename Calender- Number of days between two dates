@@ -1,0 +1,19 @@
+##Write a python program to calculate number of days between two dates 
+from datetime import datetime
+
+def days_between_dates(date1, date2):
+    date1_obj = datetime.strptime(date1, '%Y-%m-%d')
+    date2_obj = datetime.strptime(date2, '%Y-%m-%d')
+
+    delta = abs(date2_obj - date1_obj)
+    num_days = delta.days
+    
+    return num_days
+
+# Example usage:
+date_str1 = input("Enter the first date (YYYY-MM-DD): ")
+date_str2 = input("Enter the second date (YYYY-MM-DD): ")
+
+days = days_between_dates(date_str1, date_str2)
+print("Number of days between the two dates:", days)
+
