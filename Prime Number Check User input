@@ -1,0 +1,18 @@
+def is_prime(num):
+    if num <= 1:
+        return False  # 1 and numbers less than 1 are not prime
+    
+    # Check for factors from 2 to the square root of the number
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False  # If the number has a factor other than 1 and itself, it's not prime
+    
+    return True  # If no factors other than 1 and itself found, the number is prime
+
+# Example usage:
+num = int(input("Enter a number to check if it's prime: "))
+
+if is_prime(num):
+    print(num, "is a prime number.")
+else:
+    print(num, "is not a prime number.")
