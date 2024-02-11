@@ -1,0 +1,14 @@
+##Write a python program to find the sum of square root of any three numbers
+import math
+
+def sum_of_square_roots():
+    total_sum = 0
+    for i in range(3):
+        num = float(input(f"Enter number {i + 1}: "))
+        square_root = math.sqrt(num)
+        total_sum += square_root
+    return total_sum
+
+# Example usage:
+result = sum_of_square_roots()
+print("Sum of the square roots of the three numbers:", result)
