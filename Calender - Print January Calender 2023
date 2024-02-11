@@ -1,0 +1,12 @@
+##Write a python program to print the calener of January month of the year 2023
+import calendar
+
+def print_calendar(year, month):
+    cal = calendar.month(year, month)
+    print(cal)
+
+# Example usage:
+year = 2023
+month = 1  # January
+print("Calendar of January 2023:")
+print_calendar(year, month)
