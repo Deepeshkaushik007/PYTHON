@@ -1,0 +1,19 @@
+##Write a program that takes in a sentence as input and displays the number of words, number of capital letters, number of small letters, number of digit and number of special symbols
+def count_characters(sentence):
+    num_words = len(sentence.split())
+    num_uppercase = sum(1 for char in sentence if char.isupper())
+    num_lowercase = sum(1 for char in sentence if char.islower())
+    num_digits = sum(1 for char in sentence if char.isdigit())
+    num_special_symbols = sum(1 for char in sentence if not char.isalnum())
+
+    return num_words, num_uppercase, num_lowercase, num_digits, num_special_symbols
+
+# Example usage:
+sentence = input("Enter a sentence: ")
+num_words, num_uppercase, num_lowercase, num_digits, num_special_symbols = count_characters(sentence)
+
+print("Number of words:", num_words)
+print("Number of uppercase letters:", num_uppercase)
+print("Number of lowercase letters:", num_lowercase)
+print("Number of digits:", num_digits)
+print("Number of special symbols:", num_special_symbols)
