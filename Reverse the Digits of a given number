@@ -1,0 +1,10 @@
+##Write a program in 'python' to reverse the digits of a given number (the number 69876 should be returned as 67896)
+def reverse_number(num):
+    reversed_str = str(num)[::-1]
+    reversed_num = int(reversed_str)
+    return reversed_num
+
+# Example usage:
+number = int(input("Enter a number to reverse its digits: "))
+reversed_number = reverse_number(number)
+print("Reversed number:", reversed_number)
