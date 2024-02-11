@@ -1,0 +1,11 @@
+##Write a python program to find the usm of any five integers 
+def sum_of_integers():
+    total_sum = 0
+    for i in range(5):
+        num = int(input(f"Enter integer {i + 1}: "))
+        total_sum += num
+    return total_sum
+
+# Example usage:
+result = sum_of_integers()
+print("Sum of the five integers:", result)
