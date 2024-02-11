@@ -1,0 +1,13 @@
+##Write a NumPy program to find the most frequent value in an array
+import numpy as np
+
+def most_frequent_value(arr):
+    unique_values, counts = np.unique(arr, return_counts=True)
+    max_count_index = np.argmax(counts)
+    most_frequent = unique_values[max_count_index]
+    return most_frequent
+
+# Example usage:
+arr = np.array([1, 3, 5, 3, 7, 9, 3, 5, 3])
+most_frequent = most_frequent_value(arr)
+print("Most frequent value in the array:", most_frequent)
