@@ -1,4 +1,4 @@
-##Write a program to Print Fibonacci sequence
+##Write a program to Print Fibonacci sequence (User input set range)
 def fibonacci(n):
     fib_sequence = [0, 1]  
     
