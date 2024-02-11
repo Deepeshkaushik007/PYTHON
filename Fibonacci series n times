@@ -1,5 +1,5 @@
 # Write a program to print fibonacci series upto n terms in python (already set range)
-num = 10
+num = 10     #upto 100 number print
 n1, n2 = 0, 1
 print("Fibonacci Series:", n1, n2, end=" ")
 for i in range(2, num):
