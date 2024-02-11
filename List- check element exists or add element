@@ -1,0 +1,14 @@
+##Write a program to check if an element exists in the list or not if that element does not exist then add that paticular element in the list 
+def check_and_add_element(lst, element):
+    if element not in lst:
+        lst.append(element)
+        print(f"Element '{element}' added to the list.")
+    else:
+        print(f"Element '{element}' already exists in the list.")
+
+# Example usage:
+my_list = [1, 2, 3, 4, 5]
+element_to_check = int(input("Enter an element to check and add if it doesn't exist in the list: "))
+
+check_and_add_element(my_list, element_to_check)
+print("Updated list:", my_list)
