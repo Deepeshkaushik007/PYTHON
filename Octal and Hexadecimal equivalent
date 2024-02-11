@@ -1,0 +1,10 @@
+##Write a python program to enter a number in python and print its octal and Hexadecimal equivalent
+def print_octal_and_hexadecimal(number):
+    octal = oct(number)
+    hexadecimal = hex(number)
+    print("Octal equivalent:", octal)
+    print("Hexadecimal equivalent:", hexadecimal)
+
+# Example usage:
+number = int(input("Enter a number: "))
+print_octal_and_hexadecimal(number)
